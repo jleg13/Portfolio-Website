@@ -13,20 +13,73 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../img/img1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.3)), url("../img/img1.jpg") center top;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .home__name {
-  font-size: 5rem;
+  font-size: 4rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
 }
 
-.home__name--last {
-  color: #36697a;
-  font-weight: 700;
+.home .line {
+  position: relative;
+  border-right: 4px solid #00ff40;
+  width: 295px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.home .typing {
+  -webkit-animation: typewriter 3s steps(25) 1s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+          animation: typewriter 3s steps(25) 1s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 445px;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 445px;
+  }
+}
+
+@-webkit-keyframes blinkCursor {
+  from {
+    border-right-color: #fff;
+  }
+  to {
+    border-right-color: #36697a;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: #fff;
+  }
+  to {
+    border-right-color: #36697a;
+  }
 }
 
 body {
@@ -37,8 +90,19 @@ body {
   line-height: 1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 400;
+}
+
+.nav-link {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #36697a;
 }
 
 a {
@@ -54,7 +118,10 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
-  padding: 1rem;
+}
+
+nav {
+  background-blend-mode: overlay;
 }
 
 main {
@@ -62,28 +129,12 @@ main {
   width: 100%;
 }
 
-main .social-icons {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-}
-
-main .social-icons a {
-  padding: 0.4rem;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-main .social-icons a:hover {
-  color: #36697a;
-}
-
 footer {
   font-size: 1rem;
   position: fixed;
   bottom: 0.4rem;
-  right: 1rem;
-  text-align: right;
+  left: 1rem;
+  text-align: left;
   padding: 1rem;
   color: #fff;
 }
