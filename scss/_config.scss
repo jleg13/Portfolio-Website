@@ -1,62 +1,40 @@
-// Sass variables
-$primary-color: #256;
-$accent-color:rgb(255, 255, 255);
-$text-color:#000;
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+$primary-color: #272727;
+$secondary-color: #ff652f;
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-main {
-    display: block;
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
 }
 
-body {
-    line-height: 1;
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    }
+
+    @else {
+        @return #fff;
+    }
 }
 
-ol,
-ul {
-    list-style: none;
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
 }
 
-blockquote,
-q {
-    quotes: none;
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
 }
