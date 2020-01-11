@@ -96,12 +96,12 @@ h3 {
   font-weight: 400;
 }
 
-.nav-link {
+.trans-hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.nav-link:hover {
+.trans-hover:hover {
   color: #36697a;
 }
 
