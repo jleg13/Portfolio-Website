@@ -5,45 +5,58 @@
   padding: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .home {
   height: 100%;
   padding-top: 40vh;
   overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.3)), url("../img/img1.jpg") center top;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.3)), url("../img/img1.jpg") center;
+  background-size: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
 }
 
 .home__name {
-  font-size: 4rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
   border-bottom: 2px solid #fff;
+}
+
+.home .typewriter-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home .line {
   position: relative;
-  border-right: 4px solid #00ff40;
+  border-right: 4px solid #36697a;
   width: 295px;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .home .typing {
-  -webkit-animation: typewriter 3s steps(25) 1s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-          animation: typewriter 3s steps(25) 1s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+  -webkit-animation: typewriter 3s steps(25, end) 1s 1 normal both, blinkCursor 0.6s step-end infinite normal;
+          animation: typewriter 3s steps(25, end) 1s 1 normal both, blinkCursor 0.6s step-end infinite normal;
 }
 
 @-webkit-keyframes typewriter {
@@ -51,7 +64,7 @@
     width: 0;
   }
   to {
-    width: 445px;
+    width: 100%;
   }
 }
 
@@ -60,7 +73,7 @@
     width: 0;
   }
   to {
-    width: 445px;
+    width: 100%;
   }
 }
 

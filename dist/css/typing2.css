@@ -1,0 +1,23 @@
+.typing2 {
+  -webkit-animation: typewriter 0.1s steps(2) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+          animation: typewriter 0.1s steps(2) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10px;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10px;
+  }
+}
+/*# sourceMappingURL=typing2.css.map */

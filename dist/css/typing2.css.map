@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,SAAS,EAAE,UAAU,CAAC,IAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,CAAC,CAAC,MAAM,CAAC,IAAI,EAClD,WAAW,CAAC,IAAI,CAAC,SAAS,CAAC,QAAQ,CAAC,MAAM;CAWjD;;AATG,UAAU,CAAV,UAAU;EACN,IAAI;IACA,KAAK,EAAE,CAAC;;EAGZ,EAAE;IACE,KAAK,EAAE,IAAI",
+    "sources": [
+        "../../scss/typing2.scss"
+    ],
+    "names": [],
+    "file": "typing2.css"
+}

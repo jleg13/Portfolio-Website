@@ -1,58 +1,105 @@
+@import 'config';
+
 .home {
     height: 100%;
     padding-top: 40vh;
     overflow: hidden;
-    align-items: center;
     text-align: center;
     background:
         linear-gradient(to right,
             rgba($primary-color, 0.1),
             rgba($primary-color, 0.3)),
-        url('../img/img1.jpg') center top;
-    background-size: cover;
+        url('../img/img1.jpg') center;
+    background-size: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 
     &__name {
-        font-size: 4rem;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
+        font-size: 3rem;
+        // padding-bottom: 1rem;
+        // margin-bottom: 1rem;
         border-bottom: 2px solid set-text-color($primary-color);
     }
 
-    .line {
+    .typewriter-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .typewriter-text {
         position: relative;
-        border-right: 4px solid rgb(0, 255, 64);
-        width: 295px;
+        margin: 2rem auto;
         white-space: nowrap;
         overflow: hidden;
-    }
-
-    .typing {
-        animation: typewriter 3s steps(25) 1s 1 normal both,
-            blinkCursor 0.6s steps(12) infinite normal;
-    }
-
-}
-
-@keyframes typewriter {
-    from {
         width: 0;
+        border-right: 1px solid white;
     }
 
-    to {
-        width: 445px;
-    }
-}
-
-@keyframes blinkCursor {
-    from {
-        border-right-color: #fff;
+    .line-1 {
+        animation: type 3s 0.5s steps(30, end) forwards,
+            blink .5s step-end infinite;
     }
 
-    to {
-        border-right-color: $secondary-color;
+    @keyframes type {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
     }
-}
+
+    @keyframes blink {
+
+        0%,
+        100% {
+            border-color: transparent
+        }
+
+        50% {
+            border-color: white
+        }
+    }
+
+    //     .typewriter-wrapper {
+    //         display: flex;
+    //         justify-content: center;
+    //     }
+
+    //     .line {
+    //         position: relative;
+    //         border-right: 4px solid $secondary-color;
+    //         width: 295px;
+    //         white-space: nowrap;
+    //         overflow: hidden;
+    //     }
+
+    //     .typing {
+    //         animation: typewriter 3s steps(25, end) 1s 1 normal both,
+    //             blinkCursor 0.6s step-end infinite normal;
+    //     }
+
+    // }
+
+    // @keyframes typewriter {
+    //     from {
+    //         width: 0;
+    //     }
+
+    //     to {
+    //         width: 100%;
+    //     }
+    // }
+
+    // @keyframes blinkCursor {
+    //     from {
+    //         border-right-color: #fff;
+    //     }
+
+    //     to {
+    //         border-right-color: $secondary-color;
+    //     }
+    // }
