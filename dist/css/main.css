@@ -14,7 +14,6 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
   overflow: hidden;
   text-align: center;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center;
@@ -23,6 +22,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   height: 100vh;
 }
 
@@ -31,113 +33,79 @@
   border-bottom: 2px solid #fff;
 }
 
-p {
-  color: lime;
-  font-family: "Courier";
-  font-size: 20px;
-  margin: 10px 0 0 10px;
+.home .line {
+  position: relative;
+  width: 295px;
   white-space: nowrap;
   overflow: hidden;
-  width: 0;
-  opacity: 0;
-  -webkit-animation: type 4s steps(60, end) forwards;
-          animation: type 4s steps(60, end) forwards;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
 }
 
-p:nth-child(2) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+.home .curser {
+  border-right: 4px solid #fff;
 }
 
-p:nth-child(3) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+.home .typing1 {
+  -webkit-animation: typewriter1 3s steps(25) 0.8s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+          animation: typewriter1 3s steps(25) 0.8s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
 }
 
-p:nth-child(4) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+.home .typing2 {
+  -webkit-animation: typewriter2 3s steps(25) 4s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+          animation: typewriter2 3s steps(25) 4s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
 }
 
-p:nth-child(5) {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-
-p:nth-child(6) {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  margin-bottom: 25px;
-}
-
-p:nth-child(7) {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-p:nth-child(7) span:first-child {
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-}
-
-span {
-  -webkit-animation: blink 1.8s infinite 8s;
-          animation: blink 1.8s infinite 8s;
-}
-
-p a {
-  color: lime;
-  text-decoration: none;
-}
-
-@-webkit-keyframes type {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    width: 30em;
-    opacity: 1;
-  }
-}
-
-@keyframes type {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    width: 30em;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes blink {
+@-webkit-keyframes typewriter1 {
   from {
-    opacity: 0;
+    width: 0;
   }
   to {
-    opacity: 1;
+    width: 390px;
   }
 }
 
-@keyframes blink {
+@keyframes typewriter1 {
   from {
-    opacity: 0;
+    width: 0;
   }
   to {
-    opacity: 1;
+    width: 390px;
   }
 }
 
-::-moz-selection {
-  background: black;
+@-webkit-keyframes typewriter2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 425px;
+  }
 }
 
-::selection {
-  background: black;
+@keyframes typewriter2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 425px;
+  }
+}
+
+@-webkit-keyframes blinkCursor {
+  from {
+    border-right-color: #fff;
+  }
+  to {
+    border-right-color: #36697a;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: #fff;
+  }
+  to {
+    border-right-color: #36697a;
+  }
 }
 
 body {
