@@ -151,7 +151,7 @@
       width: 0;
     }
     to {
-      width: 445px;
+      width: 515px;
     }
   }
   @keyframes typewriter {
@@ -159,7 +159,7 @@
       width: 0;
     }
     to {
-      width: 445px;
+      width: 515px;
     }
   }
   @-webkit-keyframes blinkCursor {
