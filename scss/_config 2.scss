@@ -11,13 +11,6 @@ $secondary-color:rgb(54, 105, 122);
     transition: all 0.5s ease-in-out;
 }
 
-@mixin typewriter($duration, $delay) {
-    animation: type $duration $delay steps(30, end) forwards,
-        blink .5s step-end infinite;
-    // animation: typewriter 3s steps(25) 1s 1 normal both,
-    // blinkCursor 0.6s steps(12) infinite normal;
-}
-
 @function set-text-color($color) {
     @if (lightness($color) > 40%) {
         @return #000;

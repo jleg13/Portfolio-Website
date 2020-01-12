@@ -23,12 +23,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100vh;
 }
 
@@ -37,62 +31,113 @@
   border-bottom: 2px solid #fff;
 }
 
-.home .typewriter-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.home .line {
-  position: relative;
-  border-right: 4px solid #36697a;
-  width: 295px;
+p {
+  color: lime;
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
   white-space: nowrap;
   overflow: hidden;
+  width: 0;
+  opacity: 0;
+  -webkit-animation: type 4s steps(60, end) forwards;
+          animation: type 4s steps(60, end) forwards;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
 }
 
-.home .typing {
-  -webkit-animation: typewriter 3s steps(25, end) 1s 1 normal both, blinkCursor 0.6s step-end infinite normal;
-          animation: typewriter 3s steps(25, end) 1s 1 normal both, blinkCursor 0.6s step-end infinite normal;
+p:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-@-webkit-keyframes typewriter {
+p:nth-child(3) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+p:nth-child(4) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+p:nth-child(5) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+p:nth-child(6) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  margin-bottom: 25px;
+}
+
+p:nth-child(7) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+p:nth-child(7) span:first-child {
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
+span {
+  -webkit-animation: blink 1.8s infinite 8s;
+          animation: blink 1.8s infinite 8s;
+}
+
+p a {
+  color: lime;
+  text-decoration: none;
+}
+
+@-webkit-keyframes type {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    width: 30em;
+    opacity: 1;
+  }
+}
+
+@keyframes type {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    width: 30em;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
   from {
-    width: 0;
+    opacity: 0;
   }
   to {
-    width: 100%;
+    opacity: 1;
   }
 }
 
-@keyframes typewriter {
+@keyframes blink {
   from {
-    width: 0;
+    opacity: 0;
   }
   to {
-    width: 100%;
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes blinkCursor {
-  from {
-    border-right-color: #fff;
-  }
-  to {
-    border-right-color: #36697a;
-  }
+::-moz-selection {
+  background: black;
 }
 
-@keyframes blinkCursor {
-  from {
-    border-right-color: #fff;
-  }
-  to {
-    border-right-color: #36697a;
-  }
+::selection {
+  background: black;
 }
 
 body {
