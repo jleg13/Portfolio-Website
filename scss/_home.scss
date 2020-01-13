@@ -1,8 +1,5 @@
-@import 'config';
-
 .home {
   height: 100%;
-  // padding-top: 40vh;
   overflow: hidden;
   text-align: center;
   background:
@@ -12,14 +9,11 @@
     url('../img/img1.jpg') center;
   background-size: auto;
   display: flex;
-  // justify-content: center;
   align-items: flex-end;
   height: 100vh;
 
   &__name {
     font-size: 3rem;
-    // padding-bottom: 1rem;
-    // margin-bottom: 1rem;
     border-bottom: 2px solid set-text-color($primary-color);
   }
 
