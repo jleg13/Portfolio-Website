@@ -50,13 +50,25 @@ nav {
 main {
     height: 100%;
     width: 100%;
+
+    .social-icons {
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        margin-right: 1rem;
+        &__item{
+            padding: 0.3rem;
+        }
+    }
+
+    
 }
 
 footer {
     font-size: 1rem;
     position: fixed;
     bottom: 0.4rem;
-    left: 1rem;
+    right: 1rem;
     text-align: left;
     padding: 1rem;
     color: set-text-color($primary-color);

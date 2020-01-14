@@ -9,7 +9,7 @@
     url('../img/img1.jpg') center;
   background-size: auto;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   height: 100vh;
 
   &__name {
@@ -29,12 +29,12 @@
   }
 
   .typing1 {
-    animation: typewriter1 3s steps(25) 0.8s 1 normal both,
+    animation: typewriter1 3s steps(25) 1.5s 1 normal both,
       blinkCursor 0.6s steps(12) infinite normal;
   }
 
   .typing2 {
-    animation: typewriter2 3s steps(25) 4s 1 normal both,
+    animation: typewriter2 3s steps(25) 4.7s 1 normal both,
       blinkCursor 0.6s steps(12) infinite normal;
   }
 

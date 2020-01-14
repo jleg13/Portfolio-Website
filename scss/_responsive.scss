@@ -1,4 +1,150 @@
-@include media-sm {}
+@include media-xsm {
+    .home {
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+        background:
+            linear-gradient(to right,
+                rgba($primary-color, 0.1),
+                rgba($primary-color, 0.3)),
+            url('../img/img1.jpg') center;
+        background-size: auto;
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+
+        &__name {
+            font-size: 2rem;
+            border-bottom: 2px solid set-text-color($primary-color);
+        }
+
+        .line {
+            position: relative;
+            width: 295px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .curser {
+            border-right: 3px solid #fff;
+        }
+
+        .typing1 {
+            animation: typewriter1 3s steps(25) 1.5s 1 normal both,
+                blinkCursor 0.6s steps(12) infinite normal;
+        }
+
+        .typing2 {
+            animation: typewriter2 3s steps(25) 4.7s 1 normal both,
+                blinkCursor 0.6s steps(12) infinite normal;
+        }
+
+    }
+
+    @keyframes typewriter1 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 255px;
+        }
+    }
+
+    @keyframes typewriter2 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 218px;
+        }
+    }
+
+    @keyframes blinkCursor {
+        from {
+            border-right-color: #fff;
+        }
+
+        to {
+            border-right-color: $secondary-color;
+        }
+    }
+}
+
+@include media-sm {
+    .home {
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+        background:
+            linear-gradient(to right,
+                rgba($primary-color, 0.1),
+                rgba($primary-color, 0.3)),
+            url('../img/img1.jpg') center;
+        background-size: auto;
+        display: flex;
+        align-items: flex-start;
+        height: 100vh;
+
+        &__name {
+            font-size: 3rem;
+            border-bottom: 2px solid set-text-color($primary-color);
+        }
+
+        .line {
+            position: relative;
+            width: 295px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .curser {
+            border-right: 4px solid #fff;
+        }
+
+        .typing1 {
+            animation: typewriter1 3s steps(25) 1.5s 1 normal both,
+                blinkCursor 0.6s steps(12) infinite normal;
+        }
+
+        .typing2 {
+            animation: typewriter2 3s steps(25) 4.7s 1 normal both,
+                blinkCursor 0.6s steps(12) infinite normal;
+        }
+
+    }
+
+    @keyframes typewriter1 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 380px;
+        }
+    }
+
+    @keyframes typewriter2 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 325px;
+        }
+    }
+
+    @keyframes blinkCursor {
+        from {
+            border-right-color: #fff;
+        }
+
+        to {
+            border-right-color: $secondary-color;
+        }
+    }
+}
 
 @include media-md {
     .home {

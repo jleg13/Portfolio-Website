@@ -15,9 +15,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: 100vh;
 }
 
@@ -38,13 +38,13 @@
 }
 
 .home .typing1 {
-  -webkit-animation: typewriter1 3s steps(25) 0.8s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-          animation: typewriter1 3s steps(25) 0.8s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+  -webkit-animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+          animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
 }
 
 .home .typing2 {
-  -webkit-animation: typewriter2 3s steps(25) 4s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-          animation: typewriter2 3s steps(25) 4s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+  -webkit-animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+          animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
 }
 
 @-webkit-keyframes typewriter1 {
@@ -262,6 +262,263 @@
           transition-delay: 0.65s;
 }
 
+.about {
+  padding-bottom: 1rem;
+}
+
+.about__bio-image {
+  height: 40vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/img2.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/img2.jpg") center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__bio-image p {
+  margin-bottom: 2rem;
+}
+
+.about__bio {
+  width: 80%;
+  text-align: center;
+}
+
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.about .jobs__job {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #36697a;
+}
+
+.about .jobs__job h2,
+.about .jobs__job h3 {
+  margin: 0.5rem 0;
+}
+
+.about .jobs__job h6 {
+  margin: 0.3rem 0;
+}
+
+.about .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: -1rem;
+}
+
+.about .social-icons__item {
+  padding-bottom: 0.5rem;
+}
+
+.about footer {
+  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+          transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+@media screen and (min-width: 1px) {
+  .home {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.3)), url("../img/img1.jpg") center;
+    background-size: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 100vh;
+  }
+  .home__name {
+    font-size: 2rem;
+    border-bottom: 2px solid #fff;
+  }
+  .home .line {
+    position: relative;
+    width: 295px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .home .curser {
+    border-right: 3px solid #fff;
+  }
+  .home .typing1 {
+    -webkit-animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+            animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+  }
+  .home .typing2 {
+    -webkit-animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+            animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+  }
+  @-webkit-keyframes typewriter1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 255px;
+    }
+  }
+  @keyframes typewriter1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 255px;
+    }
+  }
+  @-webkit-keyframes typewriter2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 218px;
+    }
+  }
+  @keyframes typewriter2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 218px;
+    }
+  }
+  @-webkit-keyframes blinkCursor {
+    from {
+      border-right-color: #fff;
+    }
+    to {
+      border-right-color: #36697a;
+    }
+  }
+  @keyframes blinkCursor {
+    from {
+      border-right-color: #fff;
+    }
+    to {
+      border-right-color: #36697a;
+    }
+  }
+}
+
+@media screen and (min-width: 458px) {
+  .home {
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.3)), url("../img/img1.jpg") center;
+    background-size: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 100vh;
+  }
+  .home__name {
+    font-size: 3rem;
+    border-bottom: 2px solid #fff;
+  }
+  .home .line {
+    position: relative;
+    width: 295px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .home .curser {
+    border-right: 4px solid #fff;
+  }
+  .home .typing1 {
+    -webkit-animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+            animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+  }
+  .home .typing2 {
+    -webkit-animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+            animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+  }
+  @-webkit-keyframes typewriter1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 380px;
+    }
+  }
+  @keyframes typewriter1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 380px;
+    }
+  }
+  @-webkit-keyframes typewriter2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 325px;
+    }
+  }
+  @keyframes typewriter2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 325px;
+    }
+  }
+  @-webkit-keyframes blinkCursor {
+    from {
+      border-right-color: #fff;
+    }
+    to {
+      border-right-color: #36697a;
+    }
+  }
+  @keyframes blinkCursor {
+    from {
+      border-right-color: #fff;
+    }
+    to {
+      border-right-color: #36697a;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .home {
     height: 100%;
@@ -381,11 +638,22 @@ main {
   width: 100%;
 }
 
+main .social-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  margin-right: 1rem;
+}
+
+main .social-icons__item {
+  padding: 0.3rem;
+}
+
 footer {
   font-size: 1rem;
   position: fixed;
   bottom: 0.4rem;
-  left: 1rem;
+  right: 1rem;
   text-align: left;
   padding: 1rem;
   color: #fff;
