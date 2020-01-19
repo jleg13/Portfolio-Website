@@ -23,20 +23,25 @@
     &__bio {
         width: 80%;
         text-align: center;
+        padding-top: 4rem;
 
-        .text-secondary {
+        hr {
+            border: 2px solid $secondary-color;
+        }
+
+        .h2 {
             padding-bottom: 1rem;
         }
     }
 
-    .jobs {
+    .tools {
         width: 60vw;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
 
-        &__job {
+        &__lang {
             background: lighten($primary-color, 10%);
             padding: 0.5rem;
             border-bottom: 5px solid $secondary-color;
@@ -48,6 +53,14 @@
 
             h6 {
                 margin: 0.3rem 0;
+            }
+
+            &__icons {
+                grid-template-columns: repeat(3, 1fr);
+
+                img{
+                    width: 10%;
+                }
             }
         }
     }
@@ -61,9 +74,9 @@
             padding-bottom: 0.5rem;
         }
     }
+
     footer {
         transform:
             rotate(90deg) translate(-3rem, -5rem);
     }
 }
-

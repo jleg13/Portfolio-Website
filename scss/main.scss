@@ -5,6 +5,7 @@
 @import 'projects';
 @import 'contact';
 @import 'responsive';
+@import 'education';
 
 body {
     background: $primary-color;
@@ -31,6 +32,10 @@ h3 {
 a {
     color: set-text-color($primary-color);
     text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .text-secondary {
@@ -38,7 +43,7 @@ a {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     z-index: 2;
     width: 100%;
 }
@@ -56,12 +61,13 @@ main {
         bottom: 1rem;
         left: 1rem;
         margin-right: 1rem;
-        &__item{
+
+        &__item {
             padding: 0.3rem;
         }
     }
 
-    
+
 }
 
 footer {

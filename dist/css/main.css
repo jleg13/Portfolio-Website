@@ -164,7 +164,7 @@
 }
 
 .nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -294,13 +294,18 @@
 .about__bio {
   width: 80%;
   text-align: center;
+  padding-top: 4rem;
 }
 
-.about__bio .text-secondary {
+.about__bio hr {
+  border: 2px solid #36697a;
+}
+
+.about__bio .h2 {
   padding-bottom: 1rem;
 }
 
-.about .jobs {
+.about .tools {
   width: 60vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
@@ -310,19 +315,28 @@
   grid-gap: 2rem;
 }
 
-.about .jobs__job {
+.about .tools__lang {
   background: #414141;
   padding: 0.5rem;
   border-bottom: 5px solid #36697a;
 }
 
-.about .jobs__job h2,
-.about .jobs__job h3 {
+.about .tools__lang h2,
+.about .tools__lang h3 {
   margin: 0.5rem 0;
 }
 
-.about .jobs__job h6 {
+.about .tools__lang h6 {
   margin: 0.3rem 0;
+}
+
+.about .tools__lang__icons {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.about .tools__lang__icons img {
+  width: 10%;
 }
 
 .about .social-icons {
@@ -350,7 +364,7 @@
 }
 
 .projects__bio-image {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/img7.jpg") center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/img7.jpg") center top;
@@ -370,10 +384,22 @@
           justify-content: center;
 }
 
-.projects__bio-image .text-secondary {
-  color: #272727;
-  font-size: 3rem;
+.projects__bio-image p {
   margin-bottom: 2rem;
+}
+
+.projects__bio {
+  padding-top: 4rem;
+  width: 80%;
+  text-align: center;
+}
+
+.projects__bio hr {
+  border: 2px solid #36697a;
+}
+
+.projects__bio .h2 {
+  padding-bottom: 1rem;
 }
 
 .projects__items {
@@ -395,6 +421,8 @@
 
 .projects__item img {
   width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .projects__item::after {
@@ -459,6 +487,106 @@
 .projects footer {
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
           transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.python1__replit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  visibility: hidden;
+}
+
+.python1__replit.open {
+  visibility: visible;
+  z-index: 100;
+}
+
+.python1__replit .replit1__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 1rem 1rem;
+  background: rgba(39, 39, 39, 0.85);
+  list-style-type: none;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.python1__replit .replit1__inner.open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  z-index: 200;
+}
+
+.python1__replit .replit1__inner__frame {
+  opacity: 1;
+  z-index: 300;
+}
+
+.python2__replit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  visibility: hidden;
+}
+
+.python2__replit.open {
+  visibility: visible;
+  z-index: 100;
+}
+
+.python2__replit .replit2__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 1rem 1rem;
+  background: rgba(39, 39, 39, 0.85);
+  list-style-type: none;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.python2__replit .replit2__inner.open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  z-index: 200;
+}
+
+.python2__replit .replit2__inner__frame {
+  opacity: 1;
+  z-index: 300;
 }
 
 .contact {
@@ -768,7 +896,13 @@
     font-size: 1.5rem;
   }
   .about__bio {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .education__bio {
+    font-size: 1.2rem;
+  }
+  .projects__bio {
+    font-size: 1.2rem;
   }
   .projects__bio-image {
     height: 40vh;
@@ -795,9 +929,102 @@
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
-  .projects__bio-image {
-    height: 50vh;
-  }
+}
+
+.education {
+  padding-bottom: 1rem;
+}
+
+.education__bio-image {
+  height: 40vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/img7.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/img7.jpg") center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.education__bio-image p {
+  margin-bottom: 2rem;
+}
+
+.education__bio {
+  padding-top: 4rem;
+  width: 80%;
+  text-align: center;
+}
+
+.education__bio hr {
+  border: 2px solid #36697a;
+}
+
+.education__bio .h2 {
+  padding-bottom: 1rem;
+}
+
+.education .schools {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.education .schools__cert {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #36697a;
+}
+
+.education .schools__cert hr {
+  border: inherit;
+}
+
+.education .schools__cert h2,
+.education .schools__cert h3 {
+  margin: 0.5rem 0;
+}
+
+.education .schools__cert h6 {
+  margin: 0.3rem 0;
+}
+
+.education .schools__cert p {
+  margin-top: 1rem;
+}
+
+.education .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: -1rem;
+}
+
+.education .social-icons__item {
+  padding-bottom: 0.5rem;
+}
+
+.education footer {
+  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+          transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
 body {
@@ -828,12 +1055,16 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .text-secondary {
   color: #36697a;
 }
 
 header {
-  position: fixed;
+  position: absolute;
   z-index: 2;
   width: 100%;
 }
