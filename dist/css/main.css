@@ -331,12 +331,44 @@
 }
 
 .about .tools__lang__icons {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .about .tools__lang__icons img {
-  width: 10%;
+  width: 3rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.about .tools__lang__labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.about .tools__lang__labels h6 {
+  padding: 0.6rem;
+  border: 1px solid #36697a;
+  margin: 0.6rem;
 }
 
 .about .social-icons {

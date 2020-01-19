@@ -46,6 +46,7 @@
             padding: 0.5rem;
             border-bottom: 5px solid $secondary-color;
 
+
             h2,
             h3 {
                 margin: 0.5rem 0;
@@ -56,10 +57,31 @@
             }
 
             &__icons {
-                grid-template-columns: repeat(3, 1fr);
+                // grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: row;
+                flex-flow: wrap;
+                justify-content: space-around;
 
-                img{
-                    width: 10%;
+                img {
+                    width: 3rem;
+                    padding-left: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+
+            &__labels{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex-flow: wrap;
+                h6 {
+                    padding: 0.6rem;
+                    border: 1px solid $secondary-color;
+                    margin: 0.6rem;
+                    // justify-content: flex-start;
+
+
                 }
             }
         }
