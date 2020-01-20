@@ -1,5 +1,5 @@
 @include media-xsm {
- 
+
     .home {
         height: 100%;
         overflow: hidden;
@@ -74,9 +74,12 @@
 }
 
 @include media-sm {
+
+
+
     .contact {
         height: 100%;
-        padding-top: 30vh;
+        padding-top: 20vh;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -87,33 +90,33 @@
                 rgba($primary-color, 0.3)),
             url('../img/model-1.jpg') center top;
         background-size: cover;
-    
+
         h2 {
             font-size: 3rem;
             margin-bottom: 2rem;
         }
 
-        h4{
+        h4 {
             display: inline;
             font-size: 1.5rem;
         }
-    
-        a{
+
+        a {
             font-size: 2rem;
-            
+
         }
-    
-        .text-secondary{
+
+        .text-secondary {
             font-size: 1.5rem;
         }
-    
+
         &__list {
             display: grid;
             grid-template-columns: 1fr;
             grid-gap: 2rem;
             font-size: 1.5rem;
         }
-    
+
         .social-icons {
             position: initial;
             margin-top: 2rem;
@@ -194,6 +197,64 @@
 }
 
 @include media-md {
+
+    #ed-h2 {
+        font-size: 2rem;
+    }
+
+    #ed-p {
+        font-size: 1rem;
+    }
+
+    .about__bio {
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .projects__bio {
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    #projects__sm {
+        display: none;
+    }
+
+    .projects__btns {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+
+        padding-right: 2rem;
+        padding-left: 2rem;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        overflow: wrap;
+    }
+
+    .projects__lab {
+        display: block;
+    }
+
+    .projects__btn {
+        padding-top: 1rem;
+    }
+
     .home {
         height: 100%;
         padding-top: 40vh;
@@ -256,6 +317,8 @@
 }
 
 @include media-lg {
+
+
     .menu-btn {
         visibility: hidden;
     }
@@ -281,32 +344,6 @@
         }
     }
 
-    .about__bio {
-        font-size: 1.2rem;
-    }
-
-    .education__bio {
-        font-size: 1.2rem;
-    }
-
-    .projects__bio {
-        font-size: 1.2rem;
-    }
-
-    .projects {
-        &__bio-image {
-            height: 40vh;
-        }
-
-        &__items {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .text-secondary {
-            font-size: 3rem;
-        }
-    }
-
     .contact__list {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -315,11 +352,9 @@
 
 
 @include media-xl {
-    .projects {
-        &__items {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
+    // .projects__items {
+    //     width: 50vw;
+    // }
 
     .contact__list {
         grid-template-columns: repeat(3, 1fr);

@@ -15,21 +15,25 @@
         align-items: center;
         justify-content: center;
 
-        p {
-            margin-bottom: 2rem;
-        }
     }
 
     &__bio {
-        padding-top: 4rem;
-        width: 80%;
+        padding-top: 2rem;
+        width: 70vw;
         text-align: center;
 
-        hr{
+        hr {
             border: 2px solid $secondary-color;
         }
-        .h2 {
+
+        h2 {
             padding-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        p {
+            padding-bottom: 1rem;
+            font-size: 1rem;
         }
     }
 

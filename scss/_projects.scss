@@ -1,5 +1,5 @@
 .projects {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 
     &__bio-image {
         height: 40vh;
@@ -15,27 +15,31 @@
         align-items: center;
         justify-content: center;
 
-        p {
-            margin-bottom: 2rem;
-        }
+
     }
 
     &__bio {
         padding-top: 4rem;
-        width: 80%;
+        width: 70vw;
         text-align: center;
 
         hr {
             border: 2px solid $secondary-color;
         }
 
-        .h2 {
+        h2 {
             padding-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        p {
+            padding-bottom: 1rem;
+            font-size: 1rem;
         }
     }
 
     &__items {
-        width: 60vw;
+        width: 65vw;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
@@ -43,7 +47,6 @@
     }
 
     &__item {
-        position: relative;
         border-bottom: 5px solid $secondary-color;
         overflow: hidden;
         cursor: pointer;
@@ -75,12 +78,16 @@
             .projects__btn {
                 opacity: 1;
             }
+
+            .projects__lab {
+                opacity: 1;
+            }
         }
     }
 
     &__btns {
-        position: absolute;
         top: 0;
+        left: -1%;
         height: 100%;
         width: 100%;
         z-index: 1;
@@ -90,14 +97,48 @@
         text-align: center;
     }
 
+
+
     &__btn {
         opacity: 0;
+        margin-bottom: 0.5rem;
         color: set-text-color($secondary-color);
         @include transition-ease;
 
         &:hover {
             color: set-text-color(set-text-color($secondary-color));
         }
+    }
+
+    &__lab {
+        display: none;
+        opacity: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    &__sm {
+
+        &__Labels {
+            display: none;
+
+            &__lab {
+                margin-left: 4rem;
+                margin-right: 4rem;
+            }
+        }
+    }
+
+    .carousel-control-next {
+        padding-left: 5%;
+    }
+
+    .carousel-control-prev {
+        padding-right: 5%;
+    }
+
+    .activeLabel {
+        display: inline;
+
     }
 
     .social-icons {
