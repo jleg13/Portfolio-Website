@@ -15,7 +15,7 @@
         height: 100vh;
 
         &__name {
-            font-size: 2rem;
+            font-size: 1.5rem;
             border-bottom: 2px solid set-text-color($primary-color);
         }
 
@@ -31,12 +31,12 @@
         }
 
         .typing1 {
-            animation: typewriter1 3s steps(25) 1.5s 1 normal both,
+            animation: typewriter1 3s steps(25) 2s 1 normal both,
                 blinkCursor 0.6s steps(12) infinite normal;
         }
 
         .typing2 {
-            animation: typewriter2 3s steps(25) 4.7s 1 normal both,
+            animation: typewriter2 3s steps(25) 6s 1 normal both,
                 blinkCursor 0.6s steps(12) infinite normal;
         }
 
@@ -48,7 +48,7 @@
         }
 
         to {
-            width: 255px;
+            width: 195px;
         }
     }
 
@@ -58,7 +58,7 @@
         }
 
         to {
-            width: 218px;
+            width: 165px;
         }
     }
 
@@ -331,6 +331,85 @@
         height: 100vh;
 
         &__name {
+            font-size: 3rem;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid set-text-color($primary-color);
+        }
+
+        .line {
+            position: relative;
+            border-right: 4px solid rgb(0, 255, 64);
+            width: 295px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .typing {
+            animation: typewriter 3s steps(25) 1s 1 normal both,
+                blinkCursor 0.6s steps(12) infinite normal;
+        }
+
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 395px;
+        }
+    }
+
+    @keyframes blinkCursor {
+        from {
+            border-right-color: #fff;
+        }
+
+        to {
+            border-right-color: $secondary-color;
+        }
+    }
+
+    .schools {
+
+        &__cert {
+            width: 60vw !important;
+
+            h2,
+            h3 {
+                font-size: 1.9rem !important;
+            }
+
+            h6 {
+                font-size: 1.4rem !important;
+            }
+        }
+    }
+
+}
+
+@include media-lg {
+
+    .home {
+        height: 100%;
+        padding-top: 40vh;
+        overflow: hidden;
+        align-items: center;
+        text-align: center;
+        background:
+            linear-gradient(to right,
+                rgba($primary-color, 0.1),
+                rgba($primary-color, 0.3)),
+            url('../img/img1.jpg') center top;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        &__name {
             font-size: 4rem;
             padding-bottom: 1rem;
             margin-bottom: 1rem;
@@ -371,26 +450,6 @@
             border-right-color: $secondary-color;
         }
     }
-
-    .schools {
-
-        &__cert {
-            width: 60vw !important;
-
-            h2,
-            h3 {
-                font-size: 1.9rem !important;
-            }
-
-            h6 {
-                font-size: 1.4rem !important;
-            }
-        }
-    }
-
-}
-
-@include media-lg {
 
     .schools {
 
