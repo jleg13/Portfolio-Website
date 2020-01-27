@@ -288,9 +288,8 @@
 }
 
 .about__bio {
-  width: 70vw;
+  width: 80vw;
   text-align: center;
-  padding-top: 4rem;
 }
 
 .about__bio hr {
@@ -298,13 +297,12 @@
 }
 
 .about__bio h2 {
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .about__bio p {
-  padding-bottom: 1rem;
   font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .about .tools {
@@ -419,8 +417,7 @@
 }
 
 .projects__bio {
-  padding-top: 4rem;
-  width: 70vw;
+  width: 80vw;
   text-align: center;
 }
 
@@ -429,13 +426,12 @@
 }
 
 .projects__bio h2 {
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .projects__bio p {
-  padding-bottom: 1rem;
   font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .projects__items {
@@ -795,6 +791,33 @@
 }
 
 @media screen and (min-width: 458px) {
+  .about__bio {
+    width: 60vw;
+  }
+  .about__bio h2 {
+    font-size: 2rem;
+  }
+  .about__bio p {
+    font-size: 1.1rem;
+  }
+  .projects__bio {
+    width: 60vw;
+  }
+  .projects__bio h2 {
+    font-size: 2rem;
+  }
+  .projects__bio p {
+    font-size: 1.1rem;
+  }
+  .education__bio {
+    width: 60vw;
+  }
+  .education__bio h2 {
+    font-size: 2rem;
+  }
+  .education__bio p {
+    font-size: 1.1rem;
+  }
   .contact {
     height: 100%;
     padding-top: 20vh;
@@ -923,26 +946,45 @@
       border-right-color: #36697a;
     }
   }
+  .schools__cert {
+    width: 65vw !important;
+  }
+  .schools__cert h2,
+  .schools__cert h3 {
+    font-size: 1.6rem !important;
+  }
+  .schools__cert h6 {
+    font-size: 1.1rem !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  #ed-h2 {
-    font-size: 2rem;
-  }
-  #ed-p {
-    font-size: 1rem;
+  .about__bio {
+    width: 60vw;
   }
   .about__bio h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .about__bio p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+  .projects__bio {
+    width: 60vw;
   }
   .projects__bio h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .projects__bio p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+  .education__bio {
+    width: 60vw;
+  }
+  .education__bio h2 {
+    font-size: 2.5rem;
+  }
+  .education__bio p {
+    font-size: 1.2rem;
   }
   #projects__sm {
     display: none;
@@ -1046,9 +1088,29 @@
       border-right-color: #36697a;
     }
   }
+  .schools__cert {
+    width: 60vw !important;
+  }
+  .schools__cert h2,
+  .schools__cert h3 {
+    font-size: 1.9rem !important;
+  }
+  .schools__cert h6 {
+    font-size: 1.4rem !important;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .schools__cert {
+    width: 50vw !important;
+  }
+  .schools__cert h2,
+  .schools__cert h3 {
+    font-size: 2rem !important;
+  }
+  .schools__cert h6 {
+    font-size: 1.6rem !important;
+  }
   .menu-btn {
     visibility: hidden;
   }
@@ -1081,6 +1143,9 @@
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+  .projects__items {
+    width: 50vw;
+  }
 }
 
 .education {
@@ -1090,8 +1155,8 @@
 .education__bio-image {
   height: 40vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/img7.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/img7.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/img8.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/img8.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1109,8 +1174,7 @@
 }
 
 .education__bio {
-  padding-top: 2rem;
-  width: 70vw;
+  width: 80vw;
   text-align: center;
 }
 
@@ -1119,17 +1183,16 @@
 }
 
 .education__bio h2 {
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .education__bio p {
-  padding-bottom: 1rem;
   font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .education .schools {
-  width: 60vw;
+  width: 65vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
   display: grid;
@@ -1150,10 +1213,12 @@
 
 .education .schools__cert h2,
 .education .schools__cert h3 {
+  font-size: 1.4rem;
   margin: 0.5rem 0;
 }
 
 .education .schools__cert h6 {
+  font-size: 1rem;
   margin: 0.3rem 0;
 }
 

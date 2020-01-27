@@ -8,7 +8,7 @@
             linear-gradient(to right,
                 rgba($primary-color, 0.9),
                 rgba($primary-color, 0.3)),
-            url('../img/img7.jpg') center top;
+            url('../img/img8.jpg') center top;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -18,8 +18,7 @@
     }
 
     &__bio {
-        padding-top: 2rem;
-        width: 70vw;
+        width: 80vw;
         text-align: center;
 
         hr {
@@ -27,18 +26,17 @@
         }
 
         h2 {
-            padding-bottom: 1rem;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         p {
-            padding-bottom: 1rem;
             font-size: 1rem;
+            margin-bottom: 0;
         }
     }
 
     .schools {
-        width: 60vw;
+        width: 65vw;
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
@@ -55,10 +53,12 @@
 
             h2,
             h3 {
+                font-size: 1.4rem;
                 margin: 0.5rem 0;
             }
 
             h6 {
+                font-size: 1rem;
                 margin: 0.3rem 0;
             }
 

@@ -75,7 +75,41 @@
 
 @include media-sm {
 
+    .about__bio {
+        width: 60vw;
 
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .projects__bio {
+        width: 60vw;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .education__bio {
+        width: 60vw;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
 
     .contact {
         height: 100%;
@@ -194,35 +228,59 @@
             border-right-color: $secondary-color;
         }
     }
+
+    .schools {
+
+        &__cert {
+            width: 65vw !important;
+
+            h2,
+            h3 {
+                font-size: 1.6rem !important;
+            }
+
+            h6 {
+                font-size: 1.1rem !important;
+            }
+        }
+    }
 }
 
 @include media-md {
 
-    #ed-h2 {
-        font-size: 2rem;
-    }
-
-    #ed-p {
-        font-size: 1rem;
-    }
-
     .about__bio {
+        width: 60vw;
+
         h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
 
     .projects__bio {
+        width: 60vw;
+
         h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    .education__bio {
+        width: 60vw;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
         }
     }
 
@@ -314,9 +372,41 @@
         }
     }
 
+    .schools {
+
+        &__cert {
+            width: 60vw !important;
+
+            h2,
+            h3 {
+                font-size: 1.9rem !important;
+            }
+
+            h6 {
+                font-size: 1.4rem !important;
+            }
+        }
+    }
+
 }
 
 @include media-lg {
+
+    .schools {
+
+        &__cert {
+            width: 50vw !important;
+
+            h2,
+            h3 {
+                font-size: 2rem !important;
+            }
+
+            h6 {
+                font-size: 1.6rem !important;
+            }
+        }
+    }
 
 
     .menu-btn {
@@ -352,12 +442,14 @@
 
 
 @include media-xl {
-    // .projects__items {
-    //     width: 50vw;
-    // }
-
     .contact__list {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projects {
+        &__items {
+            width: 50vw;
+        }
     }
 
 }

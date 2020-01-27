@@ -19,8 +19,7 @@
     }
 
     &__bio {
-        padding-top: 4rem;
-        width: 70vw;
+        width: 80vw;
         text-align: center;
 
         hr {
@@ -28,13 +27,12 @@
         }
 
         h2 {
-            padding-bottom: 1rem;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         p {
-            padding-bottom: 1rem;
             font-size: 1rem;
+            margin-bottom: 0;
         }
     }
 
