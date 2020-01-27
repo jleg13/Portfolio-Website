@@ -891,19 +891,19 @@
     border-right: 4px solid #fff;
   }
   .home .typing1 {
-    -webkit-animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-            animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+    -webkit-animation: typewriter1 3s steps(25) 2s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+            animation: typewriter1 3s steps(25) 2s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
   }
   .home .typing2 {
-    -webkit-animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-            animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+    -webkit-animation: typewriter2 3s steps(25) 6s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+            animation: typewriter2 3s steps(25) 6s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
   }
   @-webkit-keyframes typewriter1 {
     from {
       width: 0;
     }
     to {
-      width: 380px;
+      width: 385px;
     }
   }
   @keyframes typewriter1 {
@@ -911,7 +911,7 @@
       width: 0;
     }
     to {
-      width: 380px;
+      width: 385px;
     }
   }
   @-webkit-keyframes typewriter2 {
@@ -919,7 +919,7 @@
       width: 0;
     }
     to {
-      width: 325px;
+      width: 328px;
     }
   }
   @keyframes typewriter2 {
@@ -927,7 +927,7 @@
       width: 0;
     }
     to {
-      width: 325px;
+      width: 328px;
     }
   }
   @-webkit-keyframes blinkCursor {
@@ -1053,15 +1053,15 @@
     overflow: hidden;
   }
   .home .typing {
-    -webkit-animation: typewriter 3s steps(25) 1s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-            animation: typewriter 3s steps(25) 1s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+    -webkit-animation: typewriter 3s steps(25) 2s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+            animation: typewriter 3s steps(25) 2s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
   }
   @-webkit-keyframes typewriter {
     from {
       width: 0;
     }
     to {
-      width: 395px;
+      width: 390px;
     }
   }
   @keyframes typewriter {
@@ -1069,7 +1069,7 @@
       width: 0;
     }
     to {
-      width: 395px;
+      width: 390px;
     }
   }
   @-webkit-keyframes blinkCursor {
