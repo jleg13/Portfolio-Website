@@ -919,14 +919,14 @@
     visibility: visible;
   }
   .home__name {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid #fff;
   }
   .home .line {
     position: relative;
-    border-right: 4px solid #00ff40;
+    border-right: 4px solid #36697a;
     width: 295px;
     white-space: nowrap;
     overflow: hidden;

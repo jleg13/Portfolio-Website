@@ -238,7 +238,7 @@
 
         &__name {
 
-            font-size: 5rem;
+            font-size: 4rem;
             padding-bottom: 1rem;
             margin-bottom: 1rem;
             border-bottom: 2px solid set-text-color($primary-color);
@@ -246,7 +246,7 @@
 
         .line {
             position: relative;
-            border-right: 4px solid rgb(0, 255, 64);
+            border-right: 4px solid $secondary-color;
             width: 295px;
             white-space: nowrap;
             overflow: hidden;
@@ -300,12 +300,11 @@
 
 @include media-lg {
 
-    
+
 
     .schools {
 
         &__cert {
-            // width: 50vw !important;
 
             h2,
             h3 {
