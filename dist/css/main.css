@@ -833,6 +833,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  #projects__sm {
+    display: none;
+  }
   .about__bio {
     width: 60vw;
   }
@@ -977,9 +980,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  .schools__cert {
-    width: 50vw !important;
-  }
   .schools__cert h2,
   .schools__cert h3 {
     font-size: 2rem !important;
