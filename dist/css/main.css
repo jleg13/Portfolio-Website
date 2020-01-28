@@ -919,7 +919,7 @@
     visibility: visible;
   }
   .home__name {
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid #fff;
@@ -980,6 +980,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .home__name {
+    font-size: 4.5rem;
+  }
   .schools__cert h2,
   .schools__cert h3 {
     font-size: 2rem !important;
