@@ -30,12 +30,6 @@ $secondary-color:rgb(54, 105, 122);
     }
 }
 
-@mixin media-xsm {
-    @media screen and (min-width: 1px) {
-        @content;
-    }
-}
-
 @mixin media-sm {
     @media screen and (min-width: 458px) {
         @content;

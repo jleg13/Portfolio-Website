@@ -6,45 +6,57 @@
 }
 
 .home {
-  height: 100%;
   overflow: hidden;
-  text-align: center;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.3)), url("../img/img1.jpg") center;
   background-size: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   height: 100vh;
 }
 
-.home__name {
-  font-size: 3rem;
+.home #smTitle {
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.home__top {
+  margin-top: 4rem;
+  margin-left: 2rem;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  grid-gap: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.home__top .name {
+  font-size: 2rem;
   border-bottom: 2px solid #fff;
 }
 
-.home .line {
+.home__top .line {
   position: relative;
-  width: 295px;
+  width: 80%;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.home .curser {
+.home__top .curser {
   border-right: 4px solid #fff;
 }
 
-.home .typing1 {
+.home__top .typing1 {
   -webkit-animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
           animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
 }
 
-.home .typing2 {
+.home__top .typing2 {
   -webkit-animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
           animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+}
+
+.home #lgTitle {
+  display: none;
 }
 
 @-webkit-keyframes typewriter1 {
@@ -52,7 +64,7 @@
     width: 0;
   }
   to {
-    width: 390px;
+    width: 100%;
   }
 }
 
@@ -61,7 +73,7 @@
     width: 0;
   }
   to {
-    width: 390px;
+    width: 100%;
   }
 }
 
@@ -70,7 +82,7 @@
     width: 0;
   }
   to {
-    width: 425px;
+    width: 100%;
   }
 }
 
@@ -79,7 +91,7 @@
     width: 0;
   }
   to {
-    width: 425px;
+    width: 100%;
   }
 }
 
@@ -703,94 +715,40 @@
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 1px) {
-  .home {
-    height: 100%;
-    overflow: hidden;
-    text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.3)), url("../img/img1.jpg") center;
-    background-size: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    height: 100vh;
+@media screen and (min-width: 458px) {
+  .home__top {
+    margin-top: 4rem;
+    margin-left: 2rem;
+    display: -ms-inline-grid;
+    display: inline-grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 0.5rem;
   }
-  .home__name {
-    font-size: 1.5rem;
+  .home__top .name {
+    font-size: 2.8rem;
     border-bottom: 2px solid #fff;
   }
-  .home .line {
+  .home__top .line {
     position: relative;
-    width: 295px;
+    width: 80%;
     white-space: nowrap;
     overflow: hidden;
   }
-  .home .curser {
-    border-right: 3px solid #fff;
+  .home__top .curser {
+    border-right: 4px solid #fff;
   }
-  .home .typing1 {
-    -webkit-animation: typewriter1 3s steps(25) 2s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-            animation: typewriter1 3s steps(25) 2s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+  .home__top .typing1 {
+    -webkit-animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+            animation: typewriter1 3s steps(25) 1.5s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
   }
-  .home .typing2 {
-    -webkit-animation: typewriter2 3s steps(25) 6s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-            animation: typewriter2 3s steps(25) 6s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+  .home__top .typing2 {
+    -webkit-animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
+            animation: typewriter2 3s steps(25) 4.7s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
   }
-  @-webkit-keyframes typewriter1 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 290px;
-    }
+  .home #lgTitle {
+    visibility: hidden;
   }
-  @keyframes typewriter1 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 290px;
-    }
-  }
-  @-webkit-keyframes typewriter2 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 250px;
-    }
-  }
-  @keyframes typewriter2 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 250px;
-    }
-  }
-  @-webkit-keyframes blinkCursor {
-    from {
-      border-right-color: #fff;
-    }
-    to {
-      border-right-color: #36697a;
-    }
-  }
-  @keyframes blinkCursor {
-    from {
-      border-right-color: #fff;
-    }
-    to {
-      border-right-color: #36697a;
-    }
-  }
-}
-
-@media screen and (min-width: 458px) {
   .about__bio {
     width: 60vw;
   }
@@ -861,90 +819,6 @@
   .contact .social-icons {
     position: initial;
     margin-top: 2rem;
-  }
-  .home {
-    height: 100%;
-    overflow: hidden;
-    text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.3)), url("../img/img1.jpg") center;
-    background-size: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    height: 100vh;
-  }
-  .home__name {
-    font-size: 3rem;
-    border-bottom: 2px solid #fff;
-  }
-  .home .line {
-    position: relative;
-    width: 295px;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .home .curser {
-    border-right: 4px solid #fff;
-  }
-  .home .typing1 {
-    -webkit-animation: typewriter1 3s steps(25) 2s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-            animation: typewriter1 3s steps(25) 2s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-  }
-  .home .typing2 {
-    -webkit-animation: typewriter2 3s steps(25) 6s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-            animation: typewriter2 3s steps(25) 6s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-  }
-  @-webkit-keyframes typewriter1 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 385px;
-    }
-  }
-  @keyframes typewriter1 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 385px;
-    }
-  }
-  @-webkit-keyframes typewriter2 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 328px;
-    }
-  }
-  @keyframes typewriter2 {
-    from {
-      width: 0;
-    }
-    to {
-      width: 328px;
-    }
-  }
-  @-webkit-keyframes blinkCursor {
-    from {
-      border-right-color: #fff;
-    }
-    to {
-      border-right-color: #36697a;
-    }
-  }
-  @keyframes blinkCursor {
-    from {
-      border-right-color: #fff;
-    }
-    to {
-      border-right-color: #36697a;
-    }
   }
   .schools__cert {
     width: 65vw !important;
@@ -1020,73 +894,17 @@
     padding-top: 1rem;
   }
   .home {
-    height: 100%;
-    padding-top: 40vh;
-    overflow: hidden;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
     background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center top;
     background: linear-gradient(to right, rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.3)), url("../img/img1.jpg") center top;
     background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    align-items: center;
     height: 100vh;
   }
-  .home__name {
-    font-size: 3rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #fff;
+  .home #smTitle {
+    display: none;
   }
-  .home .line {
-    position: relative;
-    border-right: 4px solid #00ff40;
-    width: 295px;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .home .typing {
-    -webkit-animation: typewriter 3s steps(25) 2s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-            animation: typewriter 3s steps(25) 2s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-  }
-  @-webkit-keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 390px;
-    }
-  }
-  @keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 390px;
-    }
-  }
-  @-webkit-keyframes blinkCursor {
-    from {
-      border-right-color: #fff;
-    }
-    to {
-      border-right-color: #36697a;
-    }
-  }
-  @keyframes blinkCursor {
-    from {
-      border-right-color: #fff;
-    }
-    to {
-      border-right-color: #36697a;
-    }
+  .home #lgTitle {
+    display: -ms-inline-grid !important;
+    display: inline-grid !important;
   }
   .schools__cert {
     width: 60vw !important;
@@ -1101,75 +919,6 @@
 }
 
 @media screen and (min-width: 992px) {
-  .home {
-    height: 100%;
-    padding-top: 40vh;
-    overflow: hidden;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.1)), to(rgba(39, 39, 39, 0.3))), url("../img/img1.jpg") center top;
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.1), rgba(39, 39, 39, 0.3)), url("../img/img1.jpg") center top;
-    background-size: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .home__name {
-    font-size: 4rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #fff;
-  }
-  .home .line {
-    position: relative;
-    border-right: 4px solid #00ff40;
-    width: 295px;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .home .typing {
-    -webkit-animation: typewriter 3s steps(25) 1s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-            animation: typewriter 3s steps(25) 1s 1 normal both, blinkCursor 0.6s steps(12) infinite normal;
-  }
-  @-webkit-keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 515px;
-    }
-  }
-  @keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 515px;
-    }
-  }
-  @-webkit-keyframes blinkCursor {
-    from {
-      border-right-color: #fff;
-    }
-    to {
-      border-right-color: #36697a;
-    }
-  }
-  @keyframes blinkCursor {
-    from {
-      border-right-color: #fff;
-    }
-    to {
-      border-right-color: #36697a;
-    }
-  }
   .schools__cert {
     width: 50vw !important;
   }
