@@ -745,7 +745,7 @@
       width: 0;
     }
     to {
-      width: 210px;
+      width: 290px;
     }
   }
   @keyframes typewriter1 {
@@ -753,7 +753,7 @@
       width: 0;
     }
     to {
-      width: 210px;
+      width: 290px;
     }
   }
   @-webkit-keyframes typewriter2 {
@@ -761,7 +761,7 @@
       width: 0;
     }
     to {
-      width: 180px;
+      width: 250px;
     }
   }
   @keyframes typewriter2 {
@@ -769,7 +769,7 @@
       width: 0;
     }
     to {
-      width: 180px;
+      width: 250px;
     }
   }
   @-webkit-keyframes blinkCursor {
