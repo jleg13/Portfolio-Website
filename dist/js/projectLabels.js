@@ -12,6 +12,8 @@ $('#carouselExampleCaptions').on('slide.bs.carousel', function (e) {
         $("#project_label5").addClass('activeLabel');
     } else if (e.relatedTarget.id === 'project6') {
         $("#project_label6").addClass('activeLabel');
+    } else if (e.relatedTarget.id === 'project7') {
+        $("#project_label7").addClass('activeLabel');
     }
 
 });
