@@ -23,7 +23,7 @@ Currently deployed at [joshualegresley.me](https://joshualegresley.me).
 * **Joshua Le Gresley** - *Initial work* - [jleg13](https://https://github.com/jleg13).
 
 ## Support:
-Please email jlegresl@une.edu.au if further details are required.
+Please email joshualegresley@gmail.com if further details are required.
 
 ## Contributing:
 For major changes, please open an issue first to discuss what you would like to change.
