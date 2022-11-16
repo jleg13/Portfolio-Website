@@ -15,8 +15,8 @@ Currently deployed at [joshualegresley.me](https://joshualegresley.me).
 
 ## Built With
 
-* [Bootstrap](https://getbootstrap.com/) - Front-end framework
-* [Sass](https://sass-lang.com/) - CSS extension language
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
 ## Authors
 
